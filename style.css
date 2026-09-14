@@ -1,0 +1,64 @@
+/* Variáveis Globais (cores e fontes reutilizadas no CSS) */
+:root {
+    --color-principal: brown;       /* cor principal */
+    --color-primary-dark: #4339CA;  /* versão escura */
+    --color-text: #1e1b2e;          /* cor do texto principal */
+    --color-text-light: #6b7280;    /* cor de texto secundário */
+    --color-border: #E5E7EB;        /* cor da borda */
+    --color-bg: #FFF;               /* cor de fundo */
+    --font-main: "Inter", sans-serif; /* fonte principal */
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+/* Header */
+.header {
+    width: 100%;
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+    padding: 12px 20px;
+    text-align: center;
+    position: static;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 20px;
+    color: brown;
+    gap: 24px; /* Espaçamento entre elementos */
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espaçamento entre o ícone e o texto */
+    text-decoration: none;
+}
+.logo img {
+    width: 100px;
+}
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.logo-title {
+    font-weight: bold;
+}
+.logo-subtitle {
+    font-size: 1.8em;
+    color: var(--color-text-light);
+    margin-top: 4px;
+}

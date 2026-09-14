@@ -1,104 +1,108 @@
 <!DOCTYPE html>
 <!-- Deus é fiel. -->
- <!-- Declara que este documeno usa HTMLS -->
+<!-- Declara que este documento usa HTML5 -->
 
 <html lang="pt-BR">
-    <!-- Elemento raiz da página. Lang="pt-BR" define o idioma -->
+    <!-- Elemento raiz da página. lang="pt-BR" define o idioma -->
 
 <head>
     <!-- Informações de bastidores: não aparecem diretamente na tela -->
-   
-    <meta charset="UTF-8"> <!-- Condificaçao de caracteres, garante acentos corretos -->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ativa a responsividade em dispositivos móveis-->
+    <meta charset="UTF-8">
+    <!-- Codificação de caracteres, garante acentos corretos -->
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ativa a responsividade em dispositivos móveis -->
 
-    <title>Escola Digital Livre</title> <!-- Título exibido na aba do navegador -->
+    <title>Escola Digital Livre</title>
+    <!-- Título exibido na aba do navegador -->
 
     <link rel="stylesheet" href="style.css">
-    <!-- Conceta o arquivo de estilos (CSS) -->
-
+    <!-- Conecta o arquivo de estilos (CSS) -->
 </head>
+
 <body>
     <!-- Tudo o que o usuário vê e interage fica aqui -->
 
- </header class="header">
-<!-- Tag semántica: indica o cabeçalho da página -->
+    <header class="header">
+        <!-- Tag semântica: indica o cabeçalho da página -->
 
-<div class="header-container">
-    <!-- Container que agrupa e centraliza o conteúdo do header -->
+        <div class="header-container">
+            <!-- Container que agrupa e centraliza o conteúdo do header -->
 
-    <a href="#" class="logo">
-        <!-- Logo clicável, leva para a home -->
-         <img src="./assets/Logo.png" alt="Logo Educação Digital" width="60px">
-         <!-- img: adiciona imagem / src: caminho da imagem / alt: legenda da imagem -->
+            <a href="./index.html" class="logo">
+                <!-- Logo clicável, leva para a página inicial -->
 
-<span class="logo-text">
-    <span class="logo-tittle">Escola Digital Livre</span>
-    <span class="logo-subtittle">Tecnologia para todos</span>
-</span>      
-         </a>
+                <img
+                    src="./assets/Logo.png"
+                    alt="Logo Escola Digital Livre"
+                    width="60"
+                >
+                <!-- img: adiciona imagem
+                     src: caminho da imagem
+                     alt: descrição da imagem -->
 
-         <nav class="main-nav">
-<!-- Tag semântica para o menu de navegação -->
+                <span class="logo-text">
+                    <span class="logo-title">Escola Digital Livre</span>
+                    <span class="logo-subtitle">Tecnologia para todos</span>
+                </span>
+            </a>
 
-<a href="">Inicio</a>
-<!-- a (link) para navegação | href é o caminho da página -->
-<a href="./cursos.html">Cursos</a>
-<a href="">Sobre</a>
-<a href="">Contatis</a>
+            <nav class="main-nav">
+                <!-- Tag semântica para o menu de navegação -->
 
-         </nav>
-</div>
-</header>
+                <a href="./index.html" class="nav-link">
+                    Início
+                </a>
 
-    <h1> Desenvolvimento Web</h1>
-    
-html
-<span class="logo-text">
-    <span class="logo-tittle">Escola Digital Livre</span>
-    <span class="logo-subtittle">Tecnologia para todos</span>
-</span>
+                <a href="./cursos.html" class="nav-link active">
+                    Cursos
+                </a>
 
-</a>
+                <a href="#" class="nav-link">
+                    Sobre
+                </a>
 
-<nav class="main-nav">
-    <!-- Tag semântica para o menu de navegação -->
+                <a href="#" class="nav-link">
+                    Contatos
+                </a>
+            </nav>
 
-    <a href="./index.html">Inicio</a>
-    <!-- a (link) para navegação | href é o caminho da página | "active" destaca a página atual -->
+            <div class="header-actions">
+                <!-- Agrupa os elementos de ação do header -->
 
-    <a href="./cursos.html" class="nav-link active">Cursos</a>
-    <a href="#" class="nav-link">Sobre</a>
-    <a href="#" class="nav-link">Contatos</a>
-</nav>
+                <div class="search-box">
+                    <!-- Caixa de pesquisa -->
 
-<div class="header-actions">
-    <!-- Agrupa os botões de busca e botão CTA -->
+                    <input
+                        type="text"
+                        placeholder="Buscar"
+                    >
+                    <!-- Campo de entrada -->
 
-    <div class="search-box">
-        <input type="text" placeholder="Buscar">
-        <!-- Input: campo de entrada | placeholder some assim que o usuário digita -->
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path d="M9.5 3a6.5 6.5 0 1 0 4.03 11.6l4.43 4.43 1.41-1.41-4.43-4.43A6.5 6.5 0 0 0 9.5 3zm0 2a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9z"/>
-    </svg>
-<div class="search-actions">
-    
-    <!-- Input: campo de entrada | placeholder some assim que o usuario digita -->
+                    <img
+                        src="./assets/ícons8-search.svg"
+                        alt="Ícone de pesquisa"
+                    >
+                    <!-- Ícone vetorial da lupa -->
+                </div>
 
-    <img src=".assets/ícons8-search.svg" alt="Ícone de pesquisa">
-    <!-- Icone vetoríal da lupa -->
+                <div class="search-actions">
+                    <!-- Agrupa ações relacionadas à pesquisa -->
 
-   <button class="btn-primary">Botão</button>
- <!-- Botões para ações de página -->
-  
+                    <button class="btn-primary">
+                        Botão
+                    </button>
+                    <!-- Botão para ações da página -->
+                </div>
+            </div>
 
-</div>
-</header>
+        </div>
+    </header>
 
-<h1>Desenvolvimento Web</h1>
+    <main>
+        <h1>Desenvolvimento Web</h1>
+    </main>
+
 </body>
-</html>
-        </nav>
-    </body>
 </html>
