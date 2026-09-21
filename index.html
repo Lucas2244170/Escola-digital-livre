@@ -3,7 +3,7 @@
 <!-- Declara que este documento usa HTML5 -->
 
 <html lang="pt-BR">
-    <!-- Elemento raiz da página. lang="pt-BR" define o idioma -->
+    <!-- Elemento raiz da página. Lang="pt-BR" define o idioma -->
 
 <head>
     <!-- Informações de bastidores: não aparecem diretamente na tela -->
@@ -19,6 +19,11 @@
 
     <link rel="stylesheet" href="style.css">
     <!-- Conecta o arquivo de estilos (CSS) -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caacupe+One&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -30,79 +35,54 @@
         <div class="header-container">
             <!-- Container que agrupa e centraliza o conteúdo do header -->
 
-            <a href="./index.html" class="logo">
-                <!-- Logo clicável, leva para a página inicial -->
+            <a href="#" class="logo">
+                <!-- Logo clicável, leva para a home -->
 
-                <img
-                    src="./assets/Logo.png"
-                    alt="Logo Escola Digital Livre"
-                    width="60"
-                >
-                <!-- img: adiciona imagem
-                     src: caminho da imagem
-                     alt: descrição da imagem -->
+                <img src="./assets/Logo.png" alt="Logo Educação Digital" width="60px">
+                <!-- img: adiciona imagem / src: caminho da imagem / alt: legenda da imagem -->
 
                 <span class="logo-text">
-                    <span class="logo-title">Escola Digital Livre</span>
-                    <span class="logo-subtitle">Tecnologia para todos</span>
+                    <span class="logo-tittle">Escola Digital Livre</span>
+                    <span class="Logo-subtitle">Tecnologia para todos</span>
                 </span>
+
             </a>
 
             <nav class="main-nav">
                 <!-- Tag semântica para o menu de navegação -->
 
-                <a href="./index.html" class="nav-link">
-                    Início
-                </a>
+                <a href="./index.html" class="nav-link active">Início</a>
+                <!-- a (link) para navegação | "active" destaca a página atual -->
 
-                <a href="./cursos.html" class="nav-link active">
-                    Cursos
-                </a>
+                <a href="./cursos.html" class="nav-link">Cursos</a>
+                <a href="#" class="nav-link">Sobre</a>
+                <a href="#" class="nav-link">Contatos</a>
 
-                <a href="#" class="nav-link">
-                    Sobre
-                </a>
-
-                <a href="#" class="nav-link">
-                    Contatos
-                </a>
             </nav>
 
             <div class="header-actions">
-                <!-- Agrupa os elementos de ação do header -->
+                <!-- Agrupa os botões de busca e botão CTA -->
 
                 <div class="search-box">
-                    <!-- Caixa de pesquisa -->
+                    <input type="text" placeholder="Buscar">
+                    <!-- Input: campo de entrada | placeholder some assim que o usuário digita -->
+                <img src= "assets/64673.png"
+                    alt="Ícone de pesquisa" width="50" height="50"
+>
+<!-- Ícone vetorial da lupa -->
 
-                    <input
-                        type="text"
-                        placeholder="Buscar"
-                    >
-                    <!-- Campo de entrada -->
+<button class="btn-primary">
+    Começar agora
+</button>
+<!-- Botão para ações da página -->
 
-                    <img
-                        src="./assets/ícons8-search.svg"
-                        alt="Ícone de pesquisa"
-                    >
-                    <!-- Ícone vetorial da lupa -->
                 </div>
 
-                <div class="search-actions">
-                    <!-- Agrupa ações relacionadas à pesquisa -->
-
-                    <button class="btn-primary">
-                        Botão
-                    </button>
-                    <!-- Botão para ações da página -->
-                </div>
             </div>
-
         </div>
     </header>
 
-    <main>
-        <h1>Desenvolvimento Web</h1>
-    </main>
+   
 
 </body>
 </html>
