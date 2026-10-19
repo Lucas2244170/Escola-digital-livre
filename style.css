@@ -134,8 +134,30 @@ body {
     }
 
     .btn-primary {
-        font-family: var(--font-main);
-        background-color: var(--color-primary);
-        color:#FFF
-    var(--color-border); nome;
+     background-color: var(--color-primary-dark); /* muda a cor ao passar o mause*/
     }
+
+    .hamburguer{
+        display: none;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: var(--color-text);
+    }
+/* Telas pequenas (celulares) */
+@media (max-width: 768px) {
+    .search-box{
+        display: none;
+    }
+    .nav-link {
+        display: none;
+    }
+    .btn-primary {
+        display: flex;
+    }
+
+    .hamburguer {
+        display: flex;
+    }
+}
